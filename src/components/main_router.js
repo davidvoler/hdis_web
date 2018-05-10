@@ -6,6 +6,7 @@ import {
 
 import Home from "./home/home";
 import Dashboard from "./dashboard/dashboard";
+import Editor from "./editor/editor";
 import IconButtonBar from './layout/bar';
 import BottomNavigationExampleSimple  from './layout/navigation';
       
@@ -17,6 +18,7 @@ export const MainRouter = () => (
       <IconButtonBar />
       <Route exact path="/" component={ Home } />
       <Route exact path="/dashboard" component={ Dashboard } />
+      <Route exact path="/editor" component={ Editor } />
       <BottomNavigationExampleSimple />
     </div>
   </Router>
