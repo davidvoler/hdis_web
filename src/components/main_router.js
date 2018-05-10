@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 
 import Home from "./home/home";
-import Dashboard from "../dashboard/dashboard";
+import Dashboard from "./dashboard/dashboard";
 import IconButtonBar from './layout/bar';
       
 

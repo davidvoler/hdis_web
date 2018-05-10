@@ -22,8 +22,8 @@ const IconButtonBar = () => (
   <AppBar
     title={<span style={styles.title}>HDIS Hakathon</span>}
     onTitleClick={handleClick}
-    iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-    iconElementRight={<FlatButton label="Save" />}
+    iconElementLeft={<FlatButton label="Home" />}
+    iconElementRight={<FlatButton label="Dashboard" />}
   />
 );
 

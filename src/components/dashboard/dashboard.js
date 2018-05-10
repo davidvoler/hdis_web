@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { requestStudents, requestContents, requestPayments } from '../actions/dashboard';
+import { requestStudents, requestContents, requestPayments } from '../../actions/dashboard';
 
 class Dashboard extends React.Component {
 	render() {
