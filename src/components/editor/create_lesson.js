@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { requestStudents, requestContents, requestPayments } from '../../actions/editor';
+import { createLesson } from '../../actions/editor';
 
 class CreateLesson extends React.Component {
 	render() {

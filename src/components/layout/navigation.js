@@ -47,6 +47,14 @@ class BottomNavigationExampleSimple extends Component {
           />
           </Link>
           
+          <Link to="/create_lesson" >
+          <BottomNavigationItem
+            label="Create"
+            icon={favoritesIcon}
+            onClick={() => this.select(1)}
+          />
+          </Link>
+
         </BottomNavigation>
       </Paper>
     );
