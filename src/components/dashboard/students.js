@@ -14,7 +14,7 @@ import {
   purple500,
 } from 'material-ui/styles/colors';
 
-const style = {margin: 5};
+const style = { margin: 5 };
 
 /**
  * Examples of `Avatar` using an image, [Font Icon](/#/components/font-icon), [SVG Icon](/#/components/svg-icon)
@@ -23,9 +23,9 @@ const style = {margin: 5};
 const Students = (props) => (
   <div>
     <h3>Students</h3>
-  <List>
-      { props.st.map(student => <ListItem> key={student.id}> { student.name } </ListItem> )}
-  </List>
+    <List>
+      {props.st.map(student => <ListItem key={student.id}> {student.name} </ListItem>)}
+    </List>
   </div>
 );
 
