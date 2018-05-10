@@ -11,7 +11,8 @@ class CreateLesson extends React.Component {
   
   render() {
 		return (
-      <div>
+      
+      <div className={"full-size"}>
            <h2> CreateLesson </h2>
            <CreateLessonForm onSubmit={this.submit} />
       </div>

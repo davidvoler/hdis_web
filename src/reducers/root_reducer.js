@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
     home,
     dashboard,
     editor,
-    form: formRrReducer()
+    form: formRrReducer
 })
 
 export default rootReducer;
