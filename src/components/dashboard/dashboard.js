@@ -1,31 +1,35 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { requestStudents, requestContents, requestPayments } from '../../actions/dashboard';
+import { requestDashboard } from '../../actions/dashboard';
 
 class Dashboard extends React.Component {
 	render() {
+    const students = () => {
+      if(this.props.dashboard.fetched){
+          return this.props.dashboard.dashboard.students.map(student=> <div key={student.id}>{student.name}</div>);
+      }else{
+        return "";
+      }
+    }
 		return (
       <div>
            <h2> Dashbaord </h2>
+           {students()}
       </div>
 		);
 	}
     componentWillMount() {
-        console.log("componentDidMount")
+        console.log("componentDidMount");
+        this.props.fetchDashboard();
     }
 }
 
 const mapStateToProps = (state) => ({
-  students: state.students,
-  contents: state.contents,
-  payments: state.payments,
-
+  dashboard: state.dashboard
 });
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchStudents: () => dispatch(requestStudents({})),
-        fetchContents: () => dispatch(requestContents({})),
-        fetchPayments: () => dispatch(requestPayments({})),
+      fetchDashboard: () => dispatch(requestDashboard({}))
     };
 };
 export default connect(mapStateToProps,mapDispatchToProps)(Dashboard);
