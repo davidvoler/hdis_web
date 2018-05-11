@@ -1,12 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { updateLesson } from '../../actions/editor';
+import ReactPlayer from 'react-player';
 
 class EditLesson extends React.Component {
 	render() {
 		return (
       <div>
-           <h2> EditLesson </h2>
+        <h1>Edit Lesson</h1>
+        <ReactPlayer url={this.props.edit.lesson.videoURL} />
       </div>
 		);
 	}
@@ -17,7 +19,6 @@ class EditLesson extends React.Component {
 
 const mapStateToProps = (state) => ({
   lesson: state.editor.edit
-
 });
 const mapDispatchToProps = (dispatch) => {
     return {
