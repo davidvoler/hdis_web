@@ -1,7 +1,7 @@
 {
   "name": "hdisweb",
   "version": "0.1.0",
-  "proxy": "http://localhost:8888",
+  "proxy": "http://localhost:5555",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
