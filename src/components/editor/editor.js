@@ -31,7 +31,7 @@ class Editor extends React.Component {
             <TableRowColumn>{lesson._id}</TableRowColumn>
             <TableRowColumn>{lesson.Title}</TableRowColumn>
             <TableRowColumn>{lesson.videoURL}</TableRowColumn>
-            <TableRowColumn><Link to={"/editor/edit/" + lesson._id } ><RaisedButton >Edit</RaisedButton></Link></TableRowColumn>
+            <TableRowColumn><Link to={"/edit/" + lesson._id } ><RaisedButton >Edit</RaisedButton></Link></TableRowColumn>
             </TableRow>
           )}
           

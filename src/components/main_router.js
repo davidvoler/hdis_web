@@ -23,7 +23,7 @@ export const MainRouter = () => (
       <Route exact path="/dashboard" component={ Dashboard } />
       <Route exact path="/editor" component={ Editor } />
       <Route exact path="/create_lesson" component={ CreateLesson } />
-      <Route exact path="/edit_lesson" component={ EditLesson } />
+      <Route exact path="/edit/:id" component={ EditLesson } />
       <BottomNavigationExampleSimple />
     </div>
   </Router>
