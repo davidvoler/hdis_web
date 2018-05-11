@@ -22,8 +22,6 @@ const IconButtonBar = () => (
   <AppBar
     title={<span style={styles.title}>HDIS Hakathon</span>}
     onTitleClick={handleClick}
-    iconElementLeft={<FlatButton label="Home" />}
-    iconElementRight={<FlatButton label="Dashboard" />}
   />
 );
 

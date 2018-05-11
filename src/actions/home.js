@@ -1,7 +1,7 @@
 import axios from "axios";
-import { baseUrl } from '../../constants/config'
+import { baseUrl } from '../constants/config'
 
-export const requestLessons = () => ({
-	type:'REQUEST_SOMETHING',
-	payload:axios.get(baseUrl()+'lessons')
+export const purchaseContent = (contentId) => ({
+	type:'PURCHASE',
+	payload:axios.get(baseUrl()+'purchase?content_id='+contentId)
 });
