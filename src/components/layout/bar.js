@@ -4,9 +4,6 @@ import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import FlatButton from 'material-ui/FlatButton';
 
-function handleClick() {
-  alert('onClick triggered on the title component');
-}
 
 const styles = {
   title: {
@@ -20,8 +17,7 @@ const styles = {
  */
 const IconButtonBar = () => (
   <AppBar
-    title={<span style={styles.title}>HDIS Hakathon</span>}
-    onTitleClick={handleClick}
+    title={<img src={"logo.jpeg"} height="64" />}
   />
 );
 

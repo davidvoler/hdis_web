@@ -7,7 +7,6 @@ import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 import ReactPlayer from 'react-player';
 import RaisedButton from 'material-ui/RaisedButton';
-
 class Home extends React.Component {
 
   handleClick = () => {
@@ -20,7 +19,7 @@ class Home extends React.Component {
 
         <List>
           {this.props.list.lessons.map(lesson => <ListItem key={lesson.id}>
-            <ReactPlayer url={lesson.videoURL} />
+            <ReactPlayer url={lesson.videoURL} controls  height={195} width={320} />
             <RaisedButton onClick={this.handleClick} > Purchase</RaisedButton>
           </ListItem>)}
         </List>
