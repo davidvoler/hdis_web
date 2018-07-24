@@ -1,7 +1,7 @@
-export const SERVER_HOST = 'localhost';
-export const SERVER_PORT = 5555;
+export const SERVER_HOST = 'polyglot-tv.com';
+export const SERVER_PORT = 80;
 export const SERVER_PROTOCOLE = 'http';
-export const DEV = true;
+export const DEV = false;
 
 export const baseUrl = () => {
     if (DEV){
